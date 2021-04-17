@@ -1,7 +1,7 @@
 ---
 title: "WFS Multibeam Metadata Sheet"
 author: "Alexander Ilich"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+date: "`r format(Sys.time(), '%B %d, %Y %H:%M')`"
 output: github_document
 ---
 
