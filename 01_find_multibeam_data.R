@@ -147,25 +147,25 @@ MB_df<- MB_df %>%
   bind_rows(extract_MBmetadata(data = SWFMG_bathy5, Area = "SWFMG", Subarea = 5, Type = "Bathymetry", Source = "CSCAMP")) %>%
   bind_rows(extract_MBmetadata(data = SWFMG_bs5, Area = "SWFMG", Subarea = 5, Type = "Backscatter", Source = "CSCAMP"))
 
-SWFMG_bathy6<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG6/Bathymetry/Cube/WFMG_4mCUBEBathy.bag")
+SWFMG_bathy6<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG6_WFMG1/Bathymetry/Cube/WFMG_4mCUBEBathy.bag")
 SWFMG_bs6<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = SWFMG_bathy6, Area = "SWFMG", Subarea = 6, Type = "Bathymetry", Source = "CSCAMP")) %>%
   bind_rows(extract_MBmetadata(data = SWFMG_bs6, Area = "SWFMG", Subarea = 6, Type = "Backscatter", Source = "CSCAMP"))
 
-SWFMG_bathy7AB<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG7/Bathymetry/WFMG2_4mSwathBathy.bag")
+SWFMG_bathy7AB<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG7_WGMG2/Bathymetry/WFMG2_4mSwathBathy.bag")
 SWFMG_bs7AB<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = SWFMG_bathy7AB, Area = "SWFMG", Subarea = "7AB", Type = "Bathymetry", Source = "CSCAMP")) %>%
   bind_rows(extract_MBmetadata(data = SWFMG_bs7AB, Area = "SWFMG", Subarea = "7AB", Type = "Backscatter", Source = "CSCAMP"))
 
-SWFMG_bathy8A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG8/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag")
+SWFMG_bathy8A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag")
 SWFMG_bs8A<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = SWFMG_bathy8A, Area = "SWFMG", Subarea = "8A", Type = "Bathymetry", Source = "CSCAMP")) %>%
   bind_rows(extract_MBmetadata(data = SWFMG_bs8A, Area = "SWFMG", Subarea = "8A", Type = "Backscatter", Source = "CSCAMP"))
 
-SWFMG_bathy8B<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG8/Bathymetry/1809_WFMG3D_2mBathy_PRELIMINARY.bag")
+SWFMG_bathy8B<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3D_2mBathy_PRELIMINARY.bag")
 SWFMG_bs8B<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = SWFMG_bathy8B, Area = "SWFMG", Subarea = "8B", Type = "Bathymetry", Source = "CSCAMP")) %>%
@@ -176,6 +176,10 @@ SWFMG_bs9<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = SWFMG_bathy9, Area = "SWFMG", Subarea = "9", Type = "Bathymetry", Source = "CSCAMP")) %>%
   bind_rows(extract_MBmetadata(data = SWFMG_bs9, Area = "SWFMG", Subarea = "9", Type = "Backscatter", Source = "CSCAMP"))
+
+SWFMG_bathyCombined<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/Combined Bathy/SWFMG_UptoDec2018/SWFMG_UptoDec2018.tif")
+MB_df<- MB_df %>% 
+  bind_rows(extract_MBmetadata(data = SWFMG_bathyCombined, Area = "SWFMG", Subarea = "UptoDec2018", Type = "Bathymetry", Source = "CSCAMP"))
 
 EFMG_bathy1<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/SWFMG/EFMG/EFMG1/Bathymetry/EastFMG1mswathangleApril2017.bag")
 EFMG_bs1<- NA

@@ -33,16 +33,17 @@ SWFMG,4,Bathymetry,2,m,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_M
 SWFMG,4,Backscatter,1,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG4/Backscatter/SWFMG4BeamAverage1m.tiff,CSCAMP,NA,NA,NA
 SWFMG,5,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG5/Bathymetry/SWFMG5_4mCUBEBathy.bag,CSCAMP,NA,NA,NA
 SWFMG,5,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,6,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG6/Bathymetry/Cube/WFMG_4mCUBEBathy.bag,CSCAMP,NA,NA,NA
+SWFMG,6,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG6_WFMG1/Bathymetry/Cube/WFMG_4mCUBEBathy.bag,CSCAMP,NA,NA,NA
 SWFMG,6,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,7AB,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG7/Bathymetry/WFMG2_4mSwathBathy.bag,CSCAMP,NA,NA,NA
+SWFMG,7AB,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG7_WGMG2/Bathymetry/WFMG2_4mSwathBathy.bag,CSCAMP,NA,NA,NA
 SWFMG,7AB,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,8A,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
+SWFMG,8A,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
 SWFMG,8A,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,8B,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8/Bathymetry/1809_WFMG3D_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
+SWFMG,8B,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3D_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
 SWFMG,8B,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 SWFMG,9,Bathymetry,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 SWFMG,9,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+SWFMG,UptoDec2018,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/Combined Bathy/SWFMG_UptoDec2018/SWFMG_UptoDec2018.tif,CSCAMP,NA,NA,NA
 EFMG,1,Bathymetry,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/EFMG/EFMG1/Bathymetry/EastFMG1mswathangleApril2017.bag,CSCAMP,NA,NA,NA
 EFMG,1,Backscatter,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 MS,Gap,Bathymetry,2,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/MS_Gap/Bathymetry/Madison_Swanson_Gap_2m_Swath_Bathy.bag,CSCAMP,NA,NA,NA
