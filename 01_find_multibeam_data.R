@@ -207,14 +207,14 @@ MB_df<- MB_df %>%
 Desoto_bathyN<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Northern_Bathymetry/nthbathg/w001001.adf")
 Desoto_bsN<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Northern_Backscatter/nthmosg/w001001.adf")
 MB_df<- MB_df %>% 
-  bind_rows(extract_MBmetadata(data = Desoto_bathyC, Area = "DeSoto Canyon", Subarea = "Northern", Type = "Bathymetry", Source = "USGS")) %>%
-  bind_rows(extract_MBmetadata(data = Desoto_bsC, Area = "DeSoto Canyon", Subarea = "Northern", Type = "Backscatter", Source = "USGS"))
+  bind_rows(extract_MBmetadata(data = Desoto_bathyN, Area = "DeSoto Canyon", Subarea = "Northern", Type = "Bathymetry", Source = "USGS")) %>%
+  bind_rows(extract_MBmetadata(data = Desoto_bsN, Area = "DeSoto Canyon", Subarea = "Northern", Type = "Backscatter", Source = "USGS"))
 
 Desoto_bathyS<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Southern_Bathymetry/sthbathg/w001001.adf")
 Desoto_bsS<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Southern_Backscatter/sthmosg/w001001.adf")
 MB_df<- MB_df %>% 
-  bind_rows(extract_MBmetadata(data = Desoto_bathyC, Area = "DeSoto Canyon", Subarea = "Southern", Type = "Bathymetry", Source = "USGS")) %>%
-  bind_rows(extract_MBmetadata(data = Desoto_bsC, Area = "DeSoto Canyon", Subarea = "Southern", Type = "Backscatter", Source = "USGS"))
+  bind_rows(extract_MBmetadata(data = Desoto_bathyS, Area = "DeSoto Canyon", Subarea = "Southern", Type = "Bathymetry", Source = "USGS")) %>%
+  bind_rows(extract_MBmetadata(data = Desoto_bsS, Area = "DeSoto Canyon", Subarea = "Southern", Type = "Backscatter", Source = "USGS"))
 
 #FMG
 FMG_bathy<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Bathymetry/2006_fmg.asc")
@@ -281,5 +281,5 @@ MB_df<- MB_df %>%
 WFS_bathyS<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Bathymetry/sbathyg/w001001.adf")
 WFS_bsS<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Backscatter/smosg/w001001.adf")
 MB_df<- MB_df %>% 
-  bind_rows(extract_MBmetadata(data = WFS_bathyN, Area = "WFS", Subarea = "Southern", Type = "Bathymetry", Source = "USGS")) %>%
-  bind_rows(extract_MBmetadata(data = WFS_bsN, Area = "WFS", Subarea = "Southern", Type = "Backscatter", Source = "USGS"))
+  bind_rows(extract_MBmetadata(data = WFS_bathyS, Area = "WFS", Subarea = "Southern", Type = "Bathymetry", Source = "USGS")) %>%
+  bind_rows(extract_MBmetadata(data = WFS_bsS, Area = "WFS", Subarea = "Southern", Type = "Backscatter", Source = "USGS"))

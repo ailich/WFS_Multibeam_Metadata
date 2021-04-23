@@ -50,10 +50,10 @@ MS,Gap,Bathymetry,2,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Mu
 MS,Gap,Backscatter,0.8129610967556731,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/MS_Gap/Backscatter/WBII2016_04_MadisonSwansonGap_Snippetgeotiff.tif,CSCAMP,NA,NA,NA
 DeSoto Canyon,Central,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,USGS,NA,NA,NA
 DeSoto Canyon,Central,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Northern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Northern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Southern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Northern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Northern_Bathymetry/nthbathg/w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Northern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Northern_Backscatter/nthmosg/w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Southern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Southern_Bathymetry/sthbathg/w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Southern_Backscatter/sthmosg/w001001.adf,USGS,NA,NA,NA
 FMG,,Bathymetry,9.999999999999743e-5,NA,longlat,GRS80,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Bathymetry/2006_fmg.asc,David Naar,NA,NA,NA
 FMG,,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Backscatter/2006_07_fmg_5m_NAfixed.tif,David Naar,NA,NA,NA
 MS,NE Corner,Bathymetry,9.999999999999835e-5,NA,longlat,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc,David Naar,NA,NA,NA
@@ -72,5 +72,5 @@ WFS,Central,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources
 WFS,Central,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Backscatter/cmosg/w001001.adf,USGS,NA,NA,NA
 WFS,Northern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Bathymetry/nbathyg/w001001.adf,USGS,NA,NA,NA
 WFS,Northern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Backscatter/nmosg/w001001.adf,USGS,NA,NA,NA
-WFS,Southern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Bathymetry/nbathyg/w001001.adf,USGS,NA,NA,NA
-WFS,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Backscatter/nmosg/w001001.adf,USGS,NA,NA,NA
+WFS,Southern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Bathymetry/sbathyg/w001001.adf,USGS,NA,NA,NA
+WFS,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Backscatter/smosg/w001001.adf,USGS,NA,NA,NA
