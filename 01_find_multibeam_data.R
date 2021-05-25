@@ -4,7 +4,7 @@ library(tidyverse)
 
 setwd("../Unified_WFS_Map2/")
 
-MB_df<- tibble(Area=character(), Subarea=character(), Type=factor(levels="Bathymetry", "Backscatter"), Resolution=numeric(), Units= character(), Projection=character(), Ellipsoid=character(), Server_Location=character(), Source=character(), Vessel=character(), Sonar=character(), Frequency_kHz=numeric())
+MB_df<- tibble(Area=character(), Subarea=character(), Type=factor(levels="Bathymetry", "Backscatter"), Resolution=numeric(), Units= character(), Projection=character(), Ellipsoid=character(), Server_Location=character(), Filename=character(), Source=character(), Vessel=character(), Sonar=character(), Frequency_kHz=numeric())
 
 extract_MBmetadata<- function(data, Area, Subarea, Type, Source=NA_character_, Vessel=NA_character_, Sonar=NA_character_, Frequency_kHz= NA_real_){
   if(!(Type=="Bathymetry" | Type =="Backscatter")){
@@ -32,9 +32,9 @@ extract_MBmetadata<- function(data, Area, Subarea, Type, Source=NA_character_, V
     Projection<- paste(Projection, Zone)
     }
     Units<- suppressWarnings(str_extract(proj_string, regex("(?<=units=)[[:alpha:]]+", perl=TRUE)))
-    output<- tibble(Area=Area, Subarea=Subarea, Type= Type, Resolution=raster::res(data)[1], Units= Units, Projection=Projection, Ellipsoid=Ellipsoid, Server_Location=Server_Location, Source=Source, Vessel=Vessel, Sonar=Sonar, Frequency_kHz=Frequency_kHz)
+    output<- tibble(Area=Area, Subarea=Subarea, Type= Type, Resolution=raster::res(data)[1], Units= Units, Projection=Projection, Ellipsoid=Ellipsoid, Server_Location=Server_Location, Filename= basename(Server_Location), Source=Source, Vessel=Vessel, Sonar=Sonar, Frequency_kHz=Frequency_kHz)
   } else{
-    output<- tibble(Area=Area, Subarea=Subarea, Type= Type, Resolution=NA_real_, Units= NA_character_, Projection=NA_character_, Ellipsoid=NA_character_, Server_Location=NA_character_, Source=Source, Vessel=Vessel, Sonar=Sonar, Frequency_kHz=Frequency_kHz)
+    output<- tibble(Area=Area, Subarea=Subarea, Type= Type, Resolution=NA_real_, Units= NA_character_, Projection=NA_character_, Ellipsoid=NA_character_, Server_Location=NA_character_,Filename= NA_character_, Source=Source, Vessel=Vessel, Sonar=Sonar, Frequency_kHz=Frequency_kHz)
     }
   return(output)
   }
