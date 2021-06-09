@@ -225,7 +225,7 @@ MB_df<- MB_df %>%
 
 #MS NE
 MS_bathyNE<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc")
-MS_bsNE<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m.tif")
+MS_bsNE<- raster("Data/NFWF_Server/2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m_NAFixed.tif")
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = MS_bathyNE, Area = "MS", Subarea = "NE Corner", Type = "Bathymetry", Source = "David Naar")) %>%
   bind_rows(extract_MBmetadata(data = MS_bsNE, Area = "MS", Subarea = "NE Corner", Type = "Backscatter", Source = "David Naar"))

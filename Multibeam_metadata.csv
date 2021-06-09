@@ -57,7 +57,7 @@ DeSoto Canyon,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_O
 FMG,,Bathymetry,9.999999999999743e-5,NA,longlat,GRS80,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Bathymetry/2006_fmg.asc,2006_fmg.asc,David Naar,NA,NA,NA
 FMG,,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Backscatter/2006_07_fmg_5m_NAfixed.tif,2006_07_fmg_5m_NAfixed.tif,David Naar,NA,NA,NA
 MS,NE Corner,Bathymetry,9.999999999999835e-5,NA,longlat,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc,2002_madison_0001.asc,David Naar,NA,NA,NA
-MS,NE Corner,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m.tif,2002_07_Madison_5m.tif,David Naar,NA,NA,NA
+MS,NE Corner,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m_NAFixed.tif,2002_07_Madison_5m_NAFixed.tif,David Naar,NA,NA,NA
 Pinnacles,,Bathymetry,16,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Bathymetry/bathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
 Pinnacles,,Backscatter,16,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Backscatter/mosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
 Pulley Ridge,,Bathymetry,5,m,utm 17,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Pulley_Ridge/Bathymetry/allpr_filcrop.asc,allpr_filcrop.asc,USGS,NA,NA,NA
