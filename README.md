@@ -1,9 +1,9 @@
 WFS Multibeam Metadata Sheet
 ================
 Alexander Ilich
-June 09, 2021 16:45
+June 10, 2021 16:53
 
-|     Area      |   Subarea   |    Type     | Resolution | Units | Projection |            Ellipsoid            |                                                      Server\_Location                                                      |                      Filename                       |   Source   | Vessel | Sonar | Frequency\_kHz |
+|     Site      |   Subsite   |    Type     | Resolution | Units | Projection |            Ellipsoid            |                                                      Server\_Location                                                      |                      Filename                       |   Source   | Vessel | Sonar | Frequency\_kHz |
 |:-------------:|:-----------:|:-----------:|:----------:|:-----:|:----------:|:-------------------------------:|:--------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------:|:----------:|:------:|:-----:|:--------------:|
 |      EL       |      1      | Bathymetry  |  2.00000   |   m   |   utm 17   |              WGS84              |                 2\_Projects/GIS/C\_Multibeam\_C-SCAMP/Elbow/EL1/Bathymetry/EL1\_Bathymetry\_CUBE\_2m.tiff                  |           EL1\_Bathymetry\_CUBE\_2m.tiff            |   CSCAMP   |        |       |                |
 |      EL       |      1      | Backscatter |  1.00000   |   m   |   utm 17   |              WGS84              |       2\_Projects/GIS/C\_Multibeam\_C-SCAMP/Elbow/EL1/Backscatter/EL1\_1mTimeSeriesBS\_TrimmedtoMosaic\_AVG800.tiff        |  EL1\_1mTimeSeriesBS\_TrimmedtoMosaic\_AVG800.tiff  |   CSCAMP   |        |       |                |

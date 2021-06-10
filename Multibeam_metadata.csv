@@ -1,4 +1,4 @@
-Area,Subarea,Type,Resolution,Units,Projection,Ellipsoid,Server_Location,Filename,Source,Vessel,Sonar,Frequency_kHz
+Site,Subsite,Type,Resolution,Units,Projection,Ellipsoid,Server_Location,Filename,Source,Vessel,Sonar,Frequency_kHz
 EL,1,Bathymetry,2,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL1/Bathymetry/EL1_Bathymetry_CUBE_2m.tiff,EL1_Bathymetry_CUBE_2m.tiff,CSCAMP,NA,NA,NA
 EL,1,Backscatter,1,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL1/Backscatter/EL1_1mTimeSeriesBS_TrimmedtoMosaic_AVG800.tiff,EL1_1mTimeSeriesBS_TrimmedtoMosaic_AVG800.tiff,CSCAMP,NA,NA,NA
 EL,2,Bathymetry,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL2/Bathymetry/EL2_AGU.bag,EL2_AGU.bag,CSCAMP,NA,NA,NA
