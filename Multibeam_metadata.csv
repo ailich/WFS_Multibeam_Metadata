@@ -13,16 +13,18 @@ EL,6A,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL6/B
 EL,6A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 EL,6B,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL6/Bathymetry/EL6B_PRELIMINARY.bag,EL6B_PRELIMINARY.bag,CSCAMP,NA,NA,NA
 EL,6B,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-RADIUS,1,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/RADIUS_1/Bathymetry/RadiusStepPRELIMINARY.bag,RadiusStepPRELIMINARY.bag,CSCAMP,NA,NA,NA
-RADIUS,1,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-RADIUS,2A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/RADIUS_2/Bathymetry/RadiusStep2A_PRELIMINARY_3m.bag,RadiusStep2A_PRELIMINARY_3m.bag,CSCAMP,NA,NA,NA
+RADIUS,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/RADIUS_1/Bathymetry/RadiusStep1A_3m.bag,RadiusStep1A_3m.bag,CSCAMP,NA,NA,NA
+RADIUS,1A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+RADIUS,2A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/RADIUS_2/Bathymetry/RadiusStep_2A_3m.bag,RadiusStep_2A_3m.bag,CSCAMP,NA,NA,NA
 RADIUS,2A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULNA,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/ULNA_1/Bathymetry/ULbow1A_PRELIMINARY_3m.bag,ULbow1A_PRELIMINARY_3m.bag,CSCAMP,NA,NA,NA
+ULNA,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/ULNA_1/Bathymetry/UlnaLedges1A_3m.bag,UlnaLedges1A_3m.bag,CSCAMP,NA,NA,NA
 ULNA,1A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULNA,1B,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/ULNA_1/Bathymetry/ULbow1B_PRELIMINARY_3m.bag,ULbow1B_PRELIMINARY_3m.bag,CSCAMP,NA,NA,NA
-ULNA,1B,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULNA,2AB,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/ULNA_2/Bathymetry/UlnaLedge2A2B_PRELIMINARY_3m.bag,UlnaLedge2A2B_PRELIMINARY_3m.bag,CSCAMP,NA,NA,NA
-ULNA,2AB,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+ULNA,2A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna/ULNA_2/Bathymetry/UlnaLedges_2A_3m.bag,UlnaLedges_2A_3m.bag,CSCAMP,NA,NA,NA
+ULNA,2A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+ULBOW,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Ulbow/Ulbow_1/Bathymetry/ULbow_1A_3m.bag,ULbow_1A_3m.bag,CSCAMP,NA,NA,NA
+ULBOW,1A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+ULBOW,1B,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Ulbow/Ulbow_1/Bathymetry/ULbow_1B_3m.bag,ULbow_1B_3m.bag,CSCAMP,NA,NA,NA
+ULBOW,1B,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 SWFMG,1,Bathymetry,2.5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG1/Bathymetry/CUBE/SWFMGMay2016_2.5mCube.bag,SWFMGMay2016_2.5mCube.bag,CSCAMP,NA,NA,NA
 SWFMG,1,Backscatter,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG1/Backscatter/SWFMGMay2016_1mBackScatter.tiff,SWFMGMay2016_1mBackScatter.tiff,CSCAMP,NA,NA,NA
 SWFMG,2,Bathymetry,2,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG2/Bathymetry/Swath_Angle/SWFMG2June2016_2m.tiff,SWFMG2June2016_2m.tiff,CSCAMP,NA,NA,NA
@@ -35,7 +37,7 @@ SWFMG,5,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWF
 SWFMG,5,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 SWFMG,6,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG6_WFMG1/Bathymetry/Cube/WFMG_4mCUBEBathy.bag,WFMG_4mCUBEBathy.bag,CSCAMP,NA,NA,NA
 SWFMG,6,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,7AB,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG7_WGMG2/Bathymetry/WFMG2_4mSwathBathy.bag,WFMG2_4mSwathBathy.bag,CSCAMP,NA,NA,NA
+SWFMG,7AB,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG7_WFMG2/Bathymetry/WFMG2_4mSwathBathy.bag,WFMG2_4mSwathBathy.bag,CSCAMP,NA,NA,NA
 SWFMG,7AB,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
 SWFMG,8A,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag,1809_WFMG3C_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
 SWFMG,8A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
