@@ -85,39 +85,39 @@ MB_df<- MB_df %>%
   bind_rows(extract_MBmetadata(data = EL6B_bs, Site = "EL", Subsite = "6B", Type = "Backscatter", Source = "CSCAMP"))
 
 #Radius
-RADIUS1_bathy<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna/RADIUS_1/Bathymetry/RadiusStep1A_3m.bag")
+RADIUS1_bathy<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna_Ulbow/RADIUS_1/Bathymetry/RadiusStep1A_3m.bag")
 RADIUS1_bs<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = RADIUS1_bathy, Site = "RADIUS", Subsite = "1A", Type = "Bathymetry", Source = "CSCAMP")) %>% 
   bind_rows(extract_MBmetadata(data = RADIUS1_bs, Site = "RADIUS", Subsite = "1A", Type = "Backscatter", Source = "CSCAMP"))
 
-RADIUS2A_bathy<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna/RADIUS_2/Bathymetry/RadiusStep_2A_3m.bag")
+RADIUS2A_bathy<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna_Ulbow/RADIUS_2/Bathymetry/RadiusStep_2A_3m.bag")
 RADIUS2A_bs<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = RADIUS2A_bathy, Site = "RADIUS", Subsite = "2A", Type = "Bathymetry", Source = "CSCAMP")) %>% 
   bind_rows(extract_MBmetadata(data = RADIUS2A_bs, Site = "RADIUS", Subsite = "2A", Type = "Backscatter", Source = "CSCAMP"))
 
 #Ulna
-ULNA_bathy1A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna/ULNA_1/Bathymetry/UlnaLedges1A_3m.bag")
+ULNA_bathy1A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna_Ulbow/ULNA_1/Bathymetry/UlnaLedges1A_3m.bag")
 ULNA_bs1A<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = ULNA_bathy1A, Site = "ULNA", Subsite = "1A", Type = "Bathymetry", Source = "CSCAMP")) %>% 
   bind_rows(extract_MBmetadata(data = ULNA_bs1A, Site = "ULNA", Subsite = "1A", Type = "Backscatter", Source = "CSCAMP"))
 
-ULNA_bathy2A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna/ULNA_2/Bathymetry/UlnaLedges_2A_3m.bag")
+ULNA_bathy2A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna_Ulbow/ULNA_2/Bathymetry/UlnaLedges_2A_3m.bag")
 ULNA_bs2A<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = ULNA_bathy2A, Site = "ULNA", Subsite = "2A", Type = "Bathymetry", Source = "CSCAMP")) %>% 
   bind_rows(extract_MBmetadata(data = ULNA_bs2A, Site = "ULNA", Subsite = "2A", Type = "Backscatter", Source = "CSCAMP"))
 
 #Ulbow
-ULBOW_bathy1A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Ulbow/Ulbow_1/Bathymetry/ULbow_1A_3m.bag")
+ULBOW_bathy1A<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULBOW_1/Bathymetry/ULbow_1A_3m.bag")
 ULBOW_bs1A<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = ULBOW_bathy1A, Site = "ULBOW", Subsite = "1A", Type = "Bathymetry", Source = "CSCAMP")) %>% 
   bind_rows(extract_MBmetadata(data = ULBOW_bs1A, Site = "ULBOW", Subsite = "1A", Type = "Backscatter", Source = "CSCAMP"))
 
-ULBOW_bathy1B<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Ulbow/Ulbow_1/Bathymetry/ULbow_1B_3m.bag")
+ULBOW_bathy1B<- raster("Data/NFWF_Server/2_Projects/GIS/C_Multibeam_C-scamp/Radius_Ulna_Ulbow/ULBOW_1/Bathymetry/ULbow_1B_3m.bag")
 ULBOW_bs1B<- NA
 MB_df<- MB_df %>% 
   bind_rows(extract_MBmetadata(data = ULBOW_bathy1B, Site = "ULBOW", Subsite = "1B", Type = "Bathymetry", Source = "CSCAMP")) %>% 
