@@ -1,78 +1,121 @@
-Site,Subsite,Type,Resolution,Units,Projection,Ellipsoid,Server_Location,Filename,Source,Vessel,Sonar,Frequency_kHz
-EL,1,Bathymetry,2,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL1/Bathymetry/EL1_Bathymetry_CUBE_2m.tiff,EL1_Bathymetry_CUBE_2m.tiff,CSCAMP,NA,NA,NA
-EL,1,Backscatter,1,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL1/Backscatter/EL1_1mTimeSeriesBS_TrimmedtoMosaic_AVG800.tiff,EL1_1mTimeSeriesBS_TrimmedtoMosaic_AVG800.tiff,CSCAMP,NA,NA,NA
-EL,2,Bathymetry,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL2/Bathymetry/EL2_AGU.bag,EL2_AGU.bag,CSCAMP,NA,NA,NA
-EL,2,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-EL,3,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL3/Bathymetry/EL3_4mSwathBathy.bag,EL3_4mSwathBathy.bag,CSCAMP,NA,NA,NA
-EL,3,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-EL,4,Bathymetry,2,m,merc,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL4/Bathymetry/201804Elbow2mSA.bag,201804Elbow2mSA.bag,CSCAMP,NA,NA,NA
-EL,4,Backscatter,1,m,merc,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL4/Backscatter/EL4BS1m.tiff,EL4BS1m.tiff,CSCAMP,NA,NA,NA
-EL,5,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL5/Bathymetry/1809_EL5_2mBathy_PRELIMINARY.bag,1809_EL5_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
-EL,5,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-EL,6A,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL6/Bathymetry/EL6A_PRELIMINARY.bag,EL6A_PRELIMINARY.bag,CSCAMP,NA,NA,NA
-EL,6A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-EL,6B,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL6/Bathymetry/EL6B_PRELIMINARY.bag,EL6B_PRELIMINARY.bag,CSCAMP,NA,NA,NA
-EL,6B,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-RADIUS,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/RADIUS_1/Bathymetry/RadiusStep1A_3m.bag,RadiusStep1A_3m.bag,CSCAMP,NA,NA,NA
-RADIUS,1A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-RADIUS,2A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/RADIUS_2/Bathymetry/RadiusStep_2A_3m.bag,RadiusStep_2A_3m.bag,CSCAMP,NA,NA,NA
-RADIUS,2A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULNA,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULNA_1/Bathymetry/UlnaLedges1A_3m.bag,UlnaLedges1A_3m.bag,CSCAMP,NA,NA,NA
-ULNA,1A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULNA,2A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULNA_2/Bathymetry/UlnaLedges_2A_3m.bag,UlnaLedges_2A_3m.bag,CSCAMP,NA,NA,NA
-ULNA,2A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULBOW,1A,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULBOW_1/Bathymetry/ULbow_1A_3m.bag,ULbow_1A_3m.bag,CSCAMP,NA,NA,NA
-ULBOW,1A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-ULBOW,1B,Bathymetry,3,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULBOW_1/Bathymetry/ULbow_1B_3m.bag,ULbow_1B_3m.bag,CSCAMP,NA,NA,NA
-ULBOW,1B,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,1,Bathymetry,2.5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG1/Bathymetry/CUBE/SWFMGMay2016_2.5mCube.bag,SWFMGMay2016_2.5mCube.bag,CSCAMP,NA,NA,NA
-SWFMG,1,Backscatter,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG1/Backscatter/SWFMGMay2016_1mBackScatter.tiff,SWFMGMay2016_1mBackScatter.tiff,CSCAMP,NA,NA,NA
-SWFMG,2,Bathymetry,2,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG2/Bathymetry/Swath_Angle/SWFMG2June2016_2m.tiff,SWFMG2June2016_2m.tiff,CSCAMP,NA,NA,NA
-SWFMG,2,Backscatter,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG2/Backscatter/SWFMG2June2016_1mBackScatter_cropped.tif,SWFMG2June2016_1mBackScatter_cropped.tif,CSCAMP,NA,NA,NA
-SWFMG,3,Bathymetry,2,m,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG3/Bathymetry/CUBE/SWFMG3July2016Cube_2m.bag,SWFMG3July2016Cube_2m.bag,CSCAMP,NA,NA,NA
-SWFMG,3,Backscatter,1,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG3/Backscatter/SWFMG3July2016_1mBS.tiff,SWFMG3July2016_1mBS.tiff,CSCAMP,NA,NA,NA
-SWFMG,4,Bathymetry,2,m,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG4/Bathymetry/CUBE/SWFMG4Cube2m.bag,SWFMG4Cube2m.bag,CSCAMP,NA,NA,NA
-SWFMG,4,Backscatter,1,m,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG4/Backscatter/SWFMG4BeamAverage1m.tiff,SWFMG4BeamAverage1m.tiff,CSCAMP,NA,NA,NA
-SWFMG,5,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG5/Bathymetry/SWFMG5_4mCUBEBathy.bag,SWFMG5_4mCUBEBathy.bag,CSCAMP,NA,NA,NA
-SWFMG,5,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,6,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG6_WFMG1/Bathymetry/Cube/WFMG_4mCUBEBathy.bag,WFMG_4mCUBEBathy.bag,CSCAMP,NA,NA,NA
-SWFMG,6,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,7AB,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG7_WFMG2/Bathymetry/WFMG2_4mSwathBathy.bag,WFMG2_4mSwathBathy.bag,CSCAMP,NA,NA,NA
-SWFMG,7AB,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,8A,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag,1809_WFMG3C_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
-SWFMG,8A,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,8B,Bathymetry,2,m,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3D_2mBathy_PRELIMINARY.bag,1809_WFMG3D_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
-SWFMG,8B,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,9,Bathymetry,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,9,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-SWFMG,UptoDec2018,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/Combined Bathy/SWFMG_UptoDec2018/SWFMG_UptoDec2018.tif,SWFMG_UptoDec2018.tif,CSCAMP,NA,NA,NA
-EFMG,1,Bathymetry,1,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/EFMG/EFMG1/Bathymetry/EastFMG1mswathangleApril2017.bag,EastFMG1mswathangleApril2017.bag,CSCAMP,NA,NA,NA
-EFMG,1,Backscatter,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
-MS,Gap,Bathymetry,2,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/MS_Gap/Bathymetry/Madison_Swanson_Gap_2m_Swath_Bathy.bag,Madison_Swanson_Gap_2m_Swath_Bathy.bag,CSCAMP,NA,NA,NA
-MS,Gap,Backscatter,0.8129610967556731,m,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/MS_Gap/Backscatter/WBII2016_04_MadisonSwansonGap_Snippetgeotiff.tif,WBII2016_04_MadisonSwansonGap_Snippetgeotiff.tif,CSCAMP,NA,NA,NA
-DeSoto Canyon,Central,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Central,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Northern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Northern_Bathymetry/nthbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Northern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Northern_Backscatter/nthmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Southern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Southern_Bathymetry/sthbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-DeSoto Canyon,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Southern_Backscatter/sthmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-FMG,,Bathymetry,9.999999999999743e-5,NA,longlat,GRS80,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Bathymetry/2006_fmg.asc,2006_fmg.asc,David Naar,NA,NA,NA
-FMG,,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Backscatter/2006_07_fmg_5m_NAfixed.tif,2006_07_fmg_5m_NAfixed.tif,David Naar,NA,NA,NA
-MS,NE Corner,Bathymetry,9.999999999999835e-5,NA,longlat,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc,2002_madison_0001.asc,David Naar,NA,NA,NA
-MS,NE Corner,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m_NAFixed.tif,2002_07_Madison_5m_NAFixed.tif,David Naar,NA,NA,NA
-Pinnacles,,Bathymetry,16,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Bathymetry/bathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-Pinnacles,,Backscatter,16,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Backscatter/mosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-Pulley Ridge,,Bathymetry,5,m,utm 17,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Pulley_Ridge/Bathymetry/allpr_filcrop.asc,allpr_filcrop.asc,USGS,NA,NA,NA
-Pulley Ridge,,Backscatter,NA,NA,NA,NA,NA,NA,USGS,NA,NA,NA
-SL,,Bathymetry,4,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Bathymetry/sbbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-SL,,Backscatter,4,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Backscatter/sbmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-Edges,,Bathymetry,9.999999999999983e-4,NA,longlat,GRS80,2_Projects/GIS/G_Multibeam_Other_Sources/The_Edges_Seasonal_MPA/Bathymetry/TheEdges_2005_08_corridor_001.asc,TheEdges_2005_08_corridor_001.asc,David Naar,NA,NA,NA
-Edges,,Backscatter,NA,NA,NA,NA,NA,NA,David Naar,NA,NA,NA
-Twin Ridges,,Bathymetry,9.999999999997592e-5,NA,longlat,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Bathymetry/2002_twin_ridges_0001.asc,2002_twin_ridges_0001.asc,David Naar,NA,NA,NA
-Twin Ridges,,Backscatter,5,m,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Backscatter/2002_07_twin_ridges_5m.tif,2002_07_twin_ridges_5m.tif,David Naar,NA,NA,NA
-WFS,Central,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Bathymetry/cbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-WFS,Central,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Backscatter/cmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-WFS,Northern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Bathymetry/nbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-WFS,Northern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Backscatter/nmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-WFS,Southern,Bathymetry,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Bathymetry/sbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-WFS,Southern,Backscatter,8,m,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Backscatter/smosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+Site,Subsite,Cruise,Type,Resolution,Units,Projection_Description,Projection,Ellipsoid,Server_Location,Filename,Source,Vessel,Sonar,Frequency_kHz
+EL,1,2015_12A_BEL_EL,Bathymetry,2,m,WGS 84 / UTM zone 17N,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL1/Bathymetry/EL1_Bathymetry_CUBE_2m.tiff,EL1_Bathymetry_CUBE_2m.tiff,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+EL,1,2015_12A_BEL_EL,Backscatter,1,m,WGS 84 / UTM zone 17N,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL1/Backscatter/EL1_1mTimeSeriesBS_TrimmedtoMosaic_AVG800.tiff,EL1_1mTimeSeriesBS_TrimmedtoMosaic_AVG800.tiff,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+MS,Gap,2016_04_WB2_CBASS,Bathymetry,2,m,EPSG:32616,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/MS_Gap/Bathymetry/Madison_Swanson_Gap_2m_Swath_Bathy.bag,Madison_Swanson_Gap_2m_Swath_Bathy.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+MS,Gap,2016_04_WB2_CBASS,Backscatter,0.8129610967556675,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/MS_Gap/Backscatter/WBII2016_04_MadisonSwansonGap_Snippetgeotiff.tif,WBII2016_04_MadisonSwansonGap_Snippetgeotiff.tif,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+SWFMG,1,2016_05_BEL_SWFMG,Bathymetry,2.5,m,EPSG:32616,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG1/Bathymetry/CUBE/SWFMGMay2016_2.5mCube.bag,SWFMGMay2016_2.5mCube.bag,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+SWFMG,1,2016_05_BEL_SWFMG,Backscatter,1,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG1/Backscatter/SWFMGMay2016_1mBackScatter.tiff,SWFMGMay2016_1mBackScatter.tiff,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+SWFMG,2,2016_06_WB2_SWFMG,Bathymetry,2,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG2/Bathymetry/Swath_Angle/SWFMG2June2016_2m.tiff,SWFMG2June2016_2m.tiff,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+SWFMG,2,2016_06_WB2_SWFMG,Backscatter,1,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG2/Backscatter/SWFMG2June2016_1mBackScatter_cropped.tif,SWFMG2June2016_1mBackScatter_cropped.tif,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+SWFMG,3,2016_07_BEL_SWFMG,Bathymetry,2,m,EPSG:32617,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG3/Bathymetry/CUBE/SWFMG3July2016Cube_2m.bag,SWFMG3July2016Cube_2m.bag,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+SWFMG,3,2016_07_BEL_SWFMG,Backscatter,1,m,WGS 84 / UTM zone 17N,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG3/Backscatter/SWFMG3July2016_1mBS.tiff,SWFMG3July2016_1mBS.tiff,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+SWFMG,4,2016_09_BEL_SWFMG,Bathymetry,2,m,EPSG:32617,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG4/Bathymetry/CUBE/SWFMG4Cube2m.bag,SWFMG4Cube2m.bag,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+SWFMG,4,2016_09_BEL_SWFMG,Backscatter,1,m,WGS 84 / UTM zone 17N,utm 17,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG4/Backscatter/SWFMG4BeamAverage1m.tiff,SWFMG4BeamAverage1m.tiff,CSCAMP,R/V Bellows,Teledyne Reson SeaBat 7125,400
+EFMG,1,2017_04_WB2_CBASS,Bathymetry,1,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/EFMG/EFMG1/Bathymetry/EastFMG1mswathangleApril2017.bag,EastFMG1mswathangleApril2017.bag,CSCAMP,NA,NA,NA
+EFMG,1,2017_04_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+EL,2,2017_04_WB2_CBASS,Bathymetry,1,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL2/Bathymetry/EL2_AGU.bag,EL2_AGU.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7126,400
+EL,2,2017_04_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7127,400
+SWFMG,5,2017_07A_BEL_SWFMG,Bathymetry,4,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG5/Bathymetry/SWFMG5_4mCUBEBathy.bag,SWFMG5_4mCUBEBathy.bag,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+SWFMG,5,2017_07A_BEL_SWFMG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+SWFMG,6,2017_07C_BEL_SWFMG,Bathymetry,4,m,EPSG:32616,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG6_WFMG1/Bathymetry/Cube/WFMG_4mCUBEBathy.bag,WFMG_4mCUBEBathy.bag,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+SWFMG,6,2017_07C_BEL_SWFMG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+EL,3,2017_10_WB2_CBASS,Bathymetry,4,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL3/Bathymetry/EL3_4mSwathBathy.bag,EL3_4mSwathBathy.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7126,400
+EL,3,2017_10_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7127,400
+SWFMG,7AB,2017_10_WB2_CBASS,Bathymetry,4,m,WGS 84 / UTM zone 16N,utm 16,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG7_WFMG2/Bathymetry/WFMG2_4mSwathBathy.bag,WFMG2_4mSwathBathy.bag,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+SWFMG,7AB,2017_10_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+EL,4,2018_04C_WB2_CBASS,Bathymetry,2,m,WGS 84 / World Mercator,merc,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL4/Bathymetry/201804Elbow2mSA.bag,201804Elbow2mSA.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+EL,4,2018_04C_WB2_CBASS,Backscatter,1,m,WGS 84 / World Mercator,merc,WGS84,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL4/Backscatter/EL4BS1m.tiff,EL4BS1m.tiff,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+SWFMG,1807,2018_07B_HOG_SWFMG,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,1_Cruises/2018_07B_HOG_SWFMG/QimeraProject/2018-07B-HOG/Export/SWFMG1807_2m_Raw.bag,SWFMG1807_2m_Raw.bag,CSCAMP,R/V Hogarth,NA,NA
+SWFMG,1807,2018_07B_HOG_SWFMG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,NA,NA
+SWFMG,1808,2018_08_HOG_SWFMG,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,1_Cruises/2018_08_HOG_SWFMG/QimeraProjects/2018-08-HOG/Export/1808-SWFMG_2m_Raw.bag,1808-SWFMG_2m_Raw.bag,CSCAMP,R/V Hogarth,NA,NA
+SWFMG,1808,2018_08_HOG_SWFMG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,NA,NA
+SWFMG,Mustache_Ext,2018_08_HOG_SWFMG,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,1_Cruises/2018_08_HOG_SWFMG/QimeraProjects/2018-08-HOG/Export/Mustache_Ext.bag,Mustache_Ext.bag,CSCAMP,R/V Hogarth,NA,NA
+SWFMG,Mustache_Ext,2018_08_HOG_SWFMG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,NA,NA
+EL,5,2018_09_WB2_CBASS,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL5/Bathymetry/1809_EL5_2mBathy_PRELIMINARY.bag,1809_EL5_2mBathy_PRELIMINARY.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+EL,5,2018_09_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat 7125,400
+SWFMG,8A,2018_09_WB2_CBASS,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3C_2mBathy_PRELIMINARY.bag,1809_WFMG3C_2mBathy_PRELIMINARY.bag,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+SWFMG,8A,2018_09_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,NA,Teledyne Reson SeaBat 7125,400
+SWFMG,8B,2018_09_WB2_CBASS,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/SWFMG/SWFMG8_WFMG3/Bathymetry/1809_WFMG3D_2mBathy_PRELIMINARY.bag,1809_WFMG3D_2mBathy_PRELIMINARY.bag,CSCAMP,NA,NA,NA
+SWFMG,8B,2018_09_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,NA,NA,NA
+EL,6A,2018_10_HOG,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL6/Bathymetry/EL6A_PRELIMINARY.bag,EL6A_PRELIMINARY.bag,CSCAMP,R/V Hogarth,NA,NA
+EL,6A,2018_10_HOG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,NA,NA
+EL,6B,2018_10_HOG,Bathymetry,2,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Elbow/EL6/Bathymetry/EL6B_PRELIMINARY.bag,EL6B_PRELIMINARY.bag,CSCAMP,R/V Hogarth,NA,NA
+EL,6B,2018_10_HOG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,NA,NA
+RADIUS,1A,2019_04A_HOG,Bathymetry,3,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/RADIUS_1/Bathymetry/RadiusStep1A_3m.bag,RadiusStep1A_3m.bag,CSCAMP,R/V Hogarth,Teledyne Reson SeaBat T50-R Dual Head,400
+RADIUS,1A,2019_04A_HOG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,Teledyne Reson SeaBat T50-R Dual Head,400
+ULNA,1A,2019_04A_HOG,Bathymetry,3,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULNA_1/Bathymetry/UlnaLedges1A_3m.bag,UlnaLedges1A_3m.bag,CSCAMP,R/V Hogarth,Teledyne Reson SeaBat T50-R Dual Head,400
+ULNA,1A,2019_04A_HOG,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Hogarth,Teledyne Reson SeaBat T50-R Dual Head,400
+RADIUS,2A,2019_04B_WB2_CBASS,Bathymetry,3,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/RADIUS_2/Bathymetry/RadiusStep_2A_3m.bag,RadiusStep_2A_3m.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+RADIUS,2A,2019_04B_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+ULBOW,1A,2019_04B_WB2_CBASS,Bathymetry,3,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULBOW_1/Bathymetry/ULbow_1A_3m.bag,ULbow_1A_3m.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+ULBOW,1A,2019_04B_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+ULBOW,1B,2019_04B_WB2_CBASS,Bathymetry,3,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULBOW_1/Bathymetry/ULbow_1B_3m.bag,ULbow_1B_3m.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+ULBOW,1B,2019_04B_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+ULNA,2A,2019_04B_WB2_CBASS,Bathymetry,3,m,FPC_Universal_Transverse_Mercator_North_Hemisphere,utm 16,GRS80,2_Projects/GIS/C_Multibeam_C-SCAMP/Radius_Ulna_Ulbow/ULNA_2/Bathymetry/UlnaLedges_2A_3m.bag,UlnaLedges_2A_3m.bag,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+ULNA,2A,2019_04B_WB2_CBASS,Backscatter,NA,NA,NA,NA,NA,NA,NA,CSCAMP,R/V Weatherbird II,Teledyne Reson SeaBat T50-R Dual Head,400
+Edges,NA,NA,Bathymetry,9.999999999999983e-4,NA,WGS 84,longlat,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/The_Edges_Seasonal_MPA/Bathymetry/TheEdges_2005_08_corridor_001.asc,TheEdges_2005_08_corridor_001.asc,David Naar,NA,NA,NA
+Edges,NA,NA,Backscatter,NA,NA,NA,NA,NA,NA,NA,David Naar,NA,NA,NA
+FMG,NA,NA,Bathymetry,1.0000000000000072e-4,NA,WGS 84,longlat,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Bathymetry/2006_fmg.asc,2006_fmg.asc,David Naar,NA,NA,NA
+FMG,NA,NA,Backscatter,5,m,"UTM Zone 16, Northern Hemisphere",utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Backscatter/2006_07_fmg_5m_NAfixed.tif,2006_07_fmg_5m_NAfixed.tif,David Naar,NA,NA,NA
+MS,NE Corner,NA,Bathymetry,9.999999999999835e-5,NA,WGS 84,longlat,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc,2002_madison_0001.asc,David Naar,NA,NA,NA
+MS,NE Corner,NA,Backscatter,5,m,unknown,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m_NAFixed.tif,2002_07_Madison_5m_NAFixed.tif,David Naar,NA,NA,NA
+Twin Ridges,NA,NA,Bathymetry,1.0000000000000936e-4,NA,"NAD83",longlat,"NAD83",2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Bathymetry/2002_twin_ridges_0001.asc,2002_twin_ridges_0001.asc,David Naar,NA,NA,NA
+Twin Ridges,NA,NA,Backscatter,5,m,unnamed,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Backscatter/2002_07_twin_ridges_5m.tif,2002_07_twin_ridges_5m.tif,David Naar,NA,NA,NA
+Florida Trackline,761401,NA,Bathymetry,8,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/761401_Florida_Trackline.asc,761401_Florida_Trackline.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,181,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block181_4mSa.asc,Block181_4mSa.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,197,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block197_4m.asc,Block197_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,240,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block240_4m.asc,Block240_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,031E,NA,Bathymetry,5,m,unnamed,utm 17,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block031E_5m_Cube.asc,Block031E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,032E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block032E_5m_Cube.asc,Block032E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,105E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block105E_5m_Cube.asc,Block105E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,125_145E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block125_145E_5m_Cube.asc,Block125_145E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,125E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block125E_5m_Cube.asc,Block125E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,125E_N,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block125E_N.asc,Block125E_N.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,125E_S,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block125E_S.asc,Block125E_S.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,145E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block145E.asc,Block145E.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,197E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block197E.asc,Block197E.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,226E,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block226E_4m.asc,Block226E_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,238E,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block238E_4m.asc,Block238E_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,240_D266,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block240_D266_4m.asc,Block240_D266_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,240-227,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block240-227_4m.asc,Block240-227_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,253E,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block253E_4m.asc,Block253E_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,254a_Day264,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block254a_Day264_4m.asc,Block254a_Day264_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,254b_Day264,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block254b_Day264_4m.asc,Block254b_Day264_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,254c_Day264,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block254c_Day264_4m.asc,Block254c_Day264_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,254d_Day264,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block254d_Day264_4m.asc,Block254d_Day264_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,254E,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block254E_4m.asc,Block254E_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,268_Day265,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block268_Day265_4m.asc,Block268_Day265_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,296_Day264,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block296_Day264_4m.asc,Block296_Day264_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,345E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block345E_5m_Cube.asc,Block345E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,371E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block371E_5m_Cube.asc,Block371E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,372E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block372E.asc,Block372E.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,372E_2,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block372E_2.asc,Block372E_2.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,373E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block373E.asc,Block373E.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,403_Day262_CamSites,NA,Bathymetry,2,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block403_Day262_CamSites_2m.asc,Block403_Day262_CamSites_2m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,403_Day263_CamSites,NA,Bathymetry,2,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block403_Day263_CamSites_2m.asc,Block403_Day263_CamSites_2m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,404_Day263_CamSites,NA,Bathymetry,2,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block404_Day263_CamSites_2m.asc,Block404_Day263_CamSites_2m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,405_Day262,NA,Bathymetry,4,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block405_Day262_4m.asc,Block405_Day262_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,405_Day263,NA,Bathymetry,4,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block405_Day263_4m.asc,Block405_Day263_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,423E,NA,Bathymetry,4,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block423E_4m.asc,Block423E_4m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,495E,NA,Bathymetry,8,m,UTM_16N_Nad83,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block495E_8m.asc,Block495E_8m.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,525E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block525E.asc,Block525E.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,553E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block553E.asc,Block553E.asc,NMFS,NA,Simrad ME70,NA
+NMFS Block,84E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block84E_5m_Cube.asc,Block84E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
+DeSoto Canyon,Central,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Central,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Northern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Northern_Bathymetry/nthbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Northern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Northern_Backscatter/nthmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Southern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Southern_Bathymetry/sthbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+DeSoto Canyon,Southern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Southern_Backscatter/sthmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+Pinnacles,NA,NA,Bathymetry,16,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Bathymetry/bathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+Pinnacles,NA,NA,Backscatter,16,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Backscatter/mosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+Pulley Ridge,NA,NA,Bathymetry,5,m,unnamed,utm 17,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pulley_Ridge/Bathymetry/allpr_filcrop.asc,allpr_filcrop.asc,USGS,NA,NA,NA
+Pulley Ridge,NA,NA,Backscatter,NA,NA,NA,NA,NA,NA,NA,USGS,NA,NA,NA
+SL,NA,NA,Bathymetry,4,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Bathymetry/sbbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+SL,NA,NA,Backscatter,4,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Backscatter/sbmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+WFS,Central,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Bathymetry/cbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+WFS,Central,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Backscatter/cmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+WFS,Northern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Bathymetry/nbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+WFS,Northern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Backscatter/nmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+WFS,Southern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Bathymetry/sbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+WFS,Southern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Backscatter/smosg/w001001.adf,w001001.adf,USGS,NA,NA,NA

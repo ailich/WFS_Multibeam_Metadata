@@ -7,16 +7,52 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE) #Default chunk options
-library(readr)
+```
+
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(writexl)
+library(terra)
+
+mb_df<- read_xlsx("multibeam_filepaths_sorted.xlsx")
+
+for (i in 1:nrow(mb_df)) {
+  if(!is.na(mb_df$Server_Location[i])){
+    if(!file.exists(paste0("Z://",mb_df$Server_Location[i]))){stop("Error: File does not exist")}
+    
+    r<- rast(paste0("Z://",mb_df$Server_Location[i]))
+    
+    proj_string<- as.character(crs(r, proj=TRUE))
+    Projection<- suppressWarnings(str_extract(proj_string, regex("(?<=proj=)[[:alpha:]]+", perl=TRUE)))
+    Zone<-suppressWarnings(str_extract(proj_string, regex("(?<=zone=)[[:digit:]]+", perl=TRUE)))
+    Ellipsoid<-suppressWarnings(str_extract(proj_string, regex("(?<=datum=)[[:alnum:]]+", perl=TRUE)))
+    if(is.na(Ellipsoid)){
+      Ellipsoid<- suppressWarnings(str_extract(proj_string, regex("(?<=ellps=)[[:alnum:]]+", perl=TRUE)))
+    }
+    if(is.na(Ellipsoid)){
+      Ellipsoid<- paste(unlist(str_extract_all(proj_string, "\\+((rf)|(f)|(a)|(b))=[^ ]+")), collapse = " ")
+    }
+    if(!is.na(Zone)){
+      Projection<- paste(Projection, Zone)
+    }
+    Units<- suppressWarnings(str_extract(proj_string, regex("(?<=units=)[[:alpha:]]+", perl=TRUE)))
+    
+    mb_df$Filename[i]<- basename(mb_df$Server_Location[i])
+    mb_df$Resolution[i]<- xres(r)
+    mb_df$Units[i]<- Units
+    mb_df$Projection_Description[i]<- as.character(crs(r, describe=TRUE, parse=TRUE)[1])
+    mb_df$Projection[i]<- Projection
+    mb_df$Ellipsoid[i]<- Ellipsoid
+  }}
+
+write_csv(mb_df, "Multibeam_metadata.csv")
+write_xlsx(mb_df, "Multibeam_metadata.xlsx")
 ```
 
 ```{r}
-source("01_find_multibeam_data.R")
-setwd("C:/Users/socce/Documents/Grad_School/Research/R_Projects/WFS_Multibeam_Metadata")
-
-write_csv(MB_df, "Multibeam_metadata.csv")
-
 options(knitr.kable.NA = '')
-knitr::kable(MB_df, format = "pipe", digits = 5, align = "c")
+knitr::kable(mb_df, format = "pipe", digits = 5, align = "c")
 ```
 
