@@ -10,19 +10,43 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE) #Default c
 ```
 
 
-```{r}
+```{r include=FALSE}
 library(tidyverse)
 library(readxl)
 library(writexl)
 library(terra)
+library(sf)
 
 mb_df<- read_xlsx("multibeam_filepaths_sorted.xlsx")
+mb_df<- st_sf(cbind(mb_df, st_sf(geometry = st_sfc(lapply(1:nrow(mb_df), function(x) st_multipolygon())))))
+st_crs(mb_df)<- "EPSG:4326"
+
+if(file.exists("Multibeam_metadata.gpkg")){
+  mb_shp<- st_read("Multibeam_metadata.gpkg")
+  for (i in 1:nrow(mb_df)) {
+    if(!is.na(mb_df$Server_Location[i])){
+      curr_geom<- st_geometry(mb_shp[which(mb_shp$Server_Location == mb_df$Server_Location[i]),])
+      if(!st_is_empty(curr_geom)){
+      mb_df$geometry[i]<- curr_geom
+      }
+      }
+    }
+} # Use existing footprints if file has already been created
 
 for (i in 1:nrow(mb_df)) {
   if(!is.na(mb_df$Server_Location[i])){
     if(!file.exists(paste0("Z://",mb_df$Server_Location[i]))){stop("Error: File does not exist")}
     
     r<- rast(paste0("Z://",mb_df$Server_Location[i]))
+    
+    if(st_is_empty(mb_df[i,])){
+      shp<- (r < Inf) %>% 
+      as.polygons(dissolve=TRUE, values=FALSE, na.rm=TRUE) %>%
+      fillHoles() %>% 
+      st_as_sf() %>%
+      st_transform("EPSG:4326")
+      mb_df$geometry[i]<- st_geometry(shp)
+    } # Only generate footprints if it doesn't exist
     
     proj_string<- as.character(crs(r, proj=TRUE))
     Projection<- suppressWarnings(str_extract(proj_string, regex("(?<=proj=)[[:alpha:]]+", perl=TRUE)))
@@ -47,12 +71,14 @@ for (i in 1:nrow(mb_df)) {
     mb_df$Ellipsoid[i]<- Ellipsoid
   }}
 
-write_csv(mb_df, "Multibeam_metadata.csv")
-write_xlsx(mb_df, "Multibeam_metadata.xlsx")
+write_csv(st_drop_geometry(mb_df), "Multibeam_metadata.csv", append=FALSE)
+write_xlsx(st_drop_geometry(mb_df), "Multibeam_metadata.xlsx")
+st_write(mb_df, "Multibeam_metadata.gpkg", append = FALSE)
+st_write(mb_df, "Multibeam_metadata.shp", append = FALSE)
 ```
 
 ```{r}
 options(knitr.kable.NA = '')
-knitr::kable(mb_df, format = "pipe", digits = 5, align = "c")
+knitr::kable(st_drop_geometry(mb_df), format = "pipe", digits = 5, align = "c")
 ```
 
