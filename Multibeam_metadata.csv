@@ -57,10 +57,10 @@ ID,Site,Subsite,Cruise,Type,Resolution,Units,Projection_Description,Projection,E
 56,Edges,NA,NA,Backscatter,NA,NA,NA,NA,NA,NA,NA,David Naar,NA,NA,NA
 57,FMG,NA,NA,Bathymetry,1.0000000000000072e-4,NA,WGS 84,longlat,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Bathymetry/2006_fmg.asc,2006_fmg.asc,David Naar,NA,NA,NA
 58,FMG,NA,NA,Backscatter,5,m,"UTM Zone 16, Northern Hemisphere",utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Florida_Middle_Grounds_HAPC/Backscatter/2006_07_fmg_5m_NAfixed.tif,2006_07_fmg_5m_NAfixed.tif,David Naar,NA,NA,NA
-59,MS,NE Corner,NA,Bathymetry,9.999999999999835e-5,NA,WGS 84,longlat,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc,2002_madison_0001.asc,David Naar,NA,NA,NA
-60,MS,NE Corner,NA,Backscatter,5,m,unknown,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m_NAFixed.tif,2002_07_Madison_5m_NAFixed.tif,David Naar,NA,NA,NA
-61,Twin Ridges,NA,NA,Bathymetry,1.0000000000000936e-4,NA,NAD83,longlat,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Bathymetry/2002_twin_ridges_0001.asc,2002_twin_ridges_0001.asc,David Naar,NA,NA,NA
-62,Twin Ridges,NA,NA,Backscatter,5,m,unnamed,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Backscatter/2002_07_twin_ridges_5m.tif,2002_07_twin_ridges_5m.tif,David Naar,NA,NA,NA
+59,MS,NE Corner,NA,Bathymetry,9.999999999999835e-5,NA,WGS 84,longlat,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Bathymetry/2002_madison_0001.asc,2002_madison_0001.asc,David Naar,NA,Kongsberg Simrad EM3000,300
+60,MS,NE Corner,NA,Backscatter,5,m,unknown,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Madison_Swanson_MPA/NEcorner/Backscatter/2002_07_Madison_5m_NAFixed.tif,2002_07_Madison_5m_NAFixed.tif,David Naar,NA,Kongsberg Simrad EM3000,300
+61,Twin Ridges,NA,NA,Bathymetry,1.0000000000000936e-4,NA,NAD83,longlat,NAD83,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Bathymetry/2002_twin_ridges_0001.asc,2002_twin_ridges_0001.asc,David Naar,R/V Suncoaster,Kongsberg Simrad EM3000,300
+62,Twin Ridges,NA,NA,Backscatter,5,m,unnamed,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/Twin_Ridges/Backscatter/2002_07_twin_ridges_5m.tif,2002_07_twin_ridges_5m.tif,David Naar,R/V Suncoaster,Kongsberg Simrad EM3000,300
 63,Florida Trackline,761401,NA,Bathymetry,8,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/761401_Florida_Trackline.asc,761401_Florida_Trackline.asc,NMFS,NA,Simrad ME70,NA
 64,NMFS Block,181,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block181_4mSa.asc,Block181_4mSa.asc,NMFS,NA,Simrad ME70,NA
 65,NMFS Block,197,NA,Bathymetry,4,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block197_4m.asc,Block197_4m.asc,NMFS,NA,Simrad ME70,NA
@@ -101,21 +101,21 @@ ID,Site,Subsite,Cruise,Type,Resolution,Units,Projection_Description,Projection,E
 100,NMFS Block,525E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block525E.asc,Block525E.asc,NMFS,NA,Simrad ME70,NA
 101,NMFS Block,553E,NA,Bathymetry,5,m,UTM_16N,utm 16,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block553E.asc,Block553E.asc,NMFS,NA,Simrad ME70,NA
 102,NMFS Block,84E,NA,Bathymetry,5,m,UTM_17N,utm 17,+a=6378137 +rf=298.257220143428,2_Projects/GIS/G_Multibeam_Other_Sources/NOAA_NMFS_Surfaces_ME70/Block84E_5m_Cube.asc,Block84E_5m_Cube.asc,NMFS,NA,Simrad ME70,NA
-103,DeSoto Canyon,Central,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-104,DeSoto Canyon,Central,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-105,DeSoto Canyon,Northern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Northern_Bathymetry/nthbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-106,DeSoto Canyon,Northern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Northern_Backscatter/nthmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-107,DeSoto Canyon,Southern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Southern_Bathymetry/sthbathg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-108,DeSoto Canyon,Southern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Southern_Backscatter/sthmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+103,DeSoto Canyon,Central,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Central_Bathymetry/cenbathg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg Dual-head EM3000,300
+104,DeSoto Canyon,Central,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Central_Backscatter/cenmosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg Dual-head EM3000,300
+105,DeSoto Canyon,Northern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Northern_Bathymetry/nthbathg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg Dual-head EM3000,300
+106,DeSoto Canyon,Northern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Northern_Backscatter/nthmosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg Dual-head EM3000,300
+107,DeSoto Canyon,Southern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Bathymetry/Southern_Bathymetry/sthbathg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg Dual-head EM3000,300
+108,DeSoto Canyon,Southern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/DeSoto_Canyon/Backscatter/Southern_Backscatter/sthmosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg Dual-head EM3000,300
 109,Pinnacles,NA,NA,Bathymetry,16,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Bathymetry/bathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
 110,Pinnacles,NA,NA,Backscatter,16,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pinnacles/Backscatter/mosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-111,Pulley Ridge,NA,NA,Bathymetry,5,m,unnamed,utm 17,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pulley_Ridge/Bathymetry/allpr_filcrop.asc,allpr_filcrop.asc,USGS,NA,NA,NA
-112,Pulley Ridge,NA,NA,Backscatter,NA,NA,NA,NA,NA,NA,NA,USGS,NA,NA,NA
-113,SL,NA,NA,Bathymetry,4,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Bathymetry/sbbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-114,SL,NA,NA,Backscatter,4,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Backscatter/sbmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-115,WFS,Central,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Bathymetry/cbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-116,WFS,Central,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Backscatter/cmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-117,WFS,Northern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Bathymetry/nbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-118,WFS,Northern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Backscatter/nmosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-119,WFS,Southern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Bathymetry/sbathyg/w001001.adf,w001001.adf,USGS,NA,NA,NA
-120,WFS,Southern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Backscatter/smosg/w001001.adf,w001001.adf,USGS,NA,NA,NA
+111,Pulley Ridge,NA,NA,Bathymetry,5,m,unnamed,utm 17,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Pulley_Ridge/Bathymetry/allpr_filcrop.asc,allpr_filcrop.asc,USGS,R/V's Bellows & Suncoaster,Kongsberg Simrad EM3000,300
+112,Pulley Ridge,NA,NA,Backscatter,NA,NA,NA,NA,NA,NA,NA,USGS,R/V's Bellows & Suncoaster,Kongsberg Simrad EM3000,300
+113,SL,NA,NA,Bathymetry,4,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Bathymetry/sbbathyg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+114,SL,NA,NA,Backscatter,4,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/Steamboat_Lumps_MPA/Backscatter/sbmosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+115,WFS,Central,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Bathymetry/cbathyg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+116,WFS,Central,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Central/Backscatter/cmosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+117,WFS,Northern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Bathymetry/nbathyg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+118,WFS,Northern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Northern/Backscatter/nmosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+119,WFS,Southern,NA,Bathymetry,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Bathymetry/sbathyg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95
+120,WFS,Southern,NA,Backscatter,8,m,unnamed,utm 16,WGS84,2_Projects/GIS/G_Multibeam_Other_Sources/West_Florida_Shelf/Southern/Backscatter/smosg/w001001.adf,w001001.adf,USGS,R/V Moana Wave,Kongsberg EM1002,95

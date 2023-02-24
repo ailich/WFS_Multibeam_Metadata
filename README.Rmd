@@ -75,6 +75,11 @@ write_csv(st_drop_geometry(mb_df), "Multibeam_metadata.csv", append=FALSE)
 write_xlsx(st_drop_geometry(mb_df), "Multibeam_metadata.xlsx")
 st_write(mb_df, "Multibeam_metadata.gpkg", append = FALSE)
 st_write(mb_df, "Multibeam_metadata.shp", append = FALSE)
+
+write_csv(st_drop_geometry(mb_df), "Z://2_Projects/GIS/Multibeam_Metadata_And_Footprints_AI/Multibeam_metadata.csv", append=FALSE)
+write_xlsx(st_drop_geometry(mb_df), "Z://2_Projects/GIS/Multibeam_Metadata_And_Footprints_AI/Multibeam_metadata.xlsx")
+st_write(mb_df, "Z://2_Projects/GIS/Multibeam_Metadata_And_Footprints_AI/Multibeam_metadata.gpkg", append = FALSE)
+st_write(mb_df, "Z://2_Projects/GIS/Multibeam_Metadata_And_Footprints_AI/Multibeam_metadata.shp", append = FALSE)
 ```
 
 ```{r}
