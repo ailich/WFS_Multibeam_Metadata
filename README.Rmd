@@ -17,7 +17,7 @@ library(writexl)
 library(terra)
 library(sf)
 
-mb_df<- read_xlsx("multibeam_filepaths_sorted.xlsx")
+mb_df<- read_xlsx("input_filepaths_sorted.xlsx")
 mb_df<- st_sf(cbind(mb_df, st_sf(geometry = st_sfc(lapply(1:nrow(mb_df), function(x) st_multipolygon())))))
 st_crs(mb_df)<- "EPSG:4326"
 
