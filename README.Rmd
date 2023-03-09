@@ -21,10 +21,19 @@ mb_df<- read_xlsx("input_filepaths_sorted.xlsx")
 mb_df<- st_sf(cbind(mb_df, st_sf(geometry = st_sfc(lapply(1:nrow(mb_df), function(x) st_multipolygon())))))
 st_crs(mb_df)<- "EPSG:4326"
 
+if(file.exists("Multibeam_metadata.csv")){
+  mb_old<- read_csv("Multibeam_metadata.csv") %>% select(ID, Server_Location)
+} else{
+  mb_old<- tibble(ID=NA_real_, Server_Location=NA_character_ , .rows = 0)
+}
+names(mb_old)[2]<- "Old_Server_Location"
+
+mb_df<- mb_df %>% left_join(mb_old, by="ID")
+
 if(file.exists("Multibeam_metadata.gpkg")){
   mb_shp<- st_read("Multibeam_metadata.gpkg")
   for (i in 1:nrow(mb_df)) {
-    if(!is.na(mb_df$Server_Location[i])){
+    if(isTRUE(mb_df$Server_Location[i]==mb_df$Old_Server_Location[i])){
       curr_geom<- st_geometry(mb_shp[which(mb_shp$Server_Location == mb_df$Server_Location[i]),])
       if(!st_is_empty(curr_geom)){
       mb_df$geometry[i]<- curr_geom
