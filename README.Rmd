@@ -12,14 +12,11 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE) #Default c
 
 ```{r include=FALSE}
 library(tidyverse)
-library(readxl)
 library(writexl)
 library(terra)
 library(sf)
 
-mb_df<- read_xlsx("input_filepaths_sorted.xlsx")
-mb_df<- st_sf(cbind(mb_df, st_sf(geometry = st_sfc(lapply(1:nrow(mb_df), function(x) st_multipolygon())))))
-st_crs(mb_df)<- "EPSG:4326"
+mb_df<- read_csv("input_filepaths_sorted.csv")
 
 if(file.exists("Multibeam_metadata.csv")){
   mb_old<- read_csv("Multibeam_metadata.csv") %>% select(ID, Server_Location)
@@ -28,7 +25,14 @@ if(file.exists("Multibeam_metadata.csv")){
 }
 names(mb_old)[2]<- "Old_Server_Location"
 
+mb_df<- bind_cols(mb_df[,1:which(names(mb_df)=="Type")], 
+          tibble(Resolution=NA_real_,	Units= NA_character_,	Projection_Description=NA_character_,	Projection=NA_character_,	Ellipsoid=NA_character_, .rows = nrow(mb_df)),
+          mb_df[,(which(names(mb_df)=="Type")+1):ncol(mb_df)]) #Add columns to fill in with new information
+          
 mb_df<- mb_df %>% left_join(mb_old, by="ID")
+
+mb_df<- st_sf(cbind(mb_df, st_sf(geometry = st_sfc(lapply(1:nrow(mb_df), function(x) st_multipolygon()))))) #Make spatial
+st_crs(mb_df)<- "EPSG:4326" #Add projection
 
 if(file.exists("Multibeam_metadata.gpkg")){
   mb_shp<- st_read("Multibeam_metadata.gpkg")
@@ -44,9 +48,13 @@ if(file.exists("Multibeam_metadata.gpkg")){
 
 for (i in 1:nrow(mb_df)) {
   if(!is.na(mb_df$Server_Location[i])){
-    if(!file.exists(paste0("Z://",mb_df$Server_Location[i]))){stop("Error: File does not exist")}
+    if(str_detect(mb_df$Server_Location[i], "^D:")){
+      prefix<-""} else{
+        prefix<- "Z://" 
+      } #NFWF Server ran out of space so some temporarily on Scamp2 D Drive
+    if(!file.exists(paste0(prefix,mb_df$Server_Location[i]))){stop("Error: File does not exist")}
     
-    r<- rast(paste0("Z://",mb_df$Server_Location[i]))
+    r<- rast(paste0(prefix,mb_df$Server_Location[i]))
     
     if(st_is_empty(mb_df[i,])){
       shp<- (r < Inf) %>% 
@@ -79,6 +87,8 @@ for (i in 1:nrow(mb_df)) {
     mb_df$Projection[i]<- Projection
     mb_df$Ellipsoid[i]<- Ellipsoid
   }}
+
+mb_df<- mb_df %>% select(-Old_Server_Location) # drop column
 
 write_csv(st_drop_geometry(mb_df), "Multibeam_metadata.csv", append=FALSE)
 write_xlsx(st_drop_geometry(mb_df), "Multibeam_metadata.xlsx")
