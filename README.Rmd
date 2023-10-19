@@ -9,6 +9,8 @@ output: github_document
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE) #Default chunk options
 ```
 
+This compilation of West Florida Shelf Multibeam data is largely for internal usage of the [C-SCAMP](https://www.marine.usf.edu/scamp/) and [COMIT](https://www.marine.usf.edu/comit/) groups at the University of South Florida College of Marine Science. This is a living document that will change as more data is collected, discovered, and reprocessed. The metadata csv/xlsx miles and the GIS vector files (shp and gpkg files) may be useful for others to understand the nature and location of various data sets that exist. The Server_Path represents the location of the data on the C-SCAMP/COMIT servers and are therefore not directly accessible to those outside the organization. In the long term, these data sets collected by C-SCAMP and COMIT will be made publicly available via [NCEI](https://www.ncei.noaa.gov/maps/bathymetry/). In the mean time, these data sets can be requested by emailing comit-data@usf.edu. Data sets collected by external groups may be available by at the specified URL in the metadata spreadsheet.
+
 
 ```{r include=FALSE}
 library(tidyverse)
