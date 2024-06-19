@@ -23,7 +23,7 @@ mb_df<- read_csv("input_filepaths_sorted.csv")
 if(file.exists("Multibeam_metadata.csv")){
   mb_old<- read_csv("Multibeam_metadata.csv") %>% select(ID, Server_Location)
 } else{
-  mb_old<- tibble(ID=NA_real_, Server_Location=NA_character_ , .rows = 0)
+  mb_old<- tibble(ID=NA_real_, Server_Location=NA_character_, .rows = 0)
 }
 names(mb_old)[2]<- "Old_Server_Location"
 
@@ -37,7 +37,7 @@ mb_df<- st_sf(cbind(mb_df, st_sf(geometry = st_sfc(lapply(1:nrow(mb_df), functio
 st_crs(mb_df)<- "EPSG:4326" #Add projection
 
 if(file.exists("Multibeam_metadata.gpkg")){
-  mb_shp<- st_read("Multibeam_metadata.gpkg")
+  mb_shp<- st_read("Multibeam_metadata.gpkg",quiet=TRUE)
   for (i in 1:nrow(mb_df)) {
     if(isTRUE(mb_df$Server_Location[i]==mb_df$Old_Server_Location[i])){
       curr_geom<- st_geometry(mb_shp[which(mb_shp$Server_Location == mb_df$Server_Location[i]),])
@@ -50,45 +50,52 @@ if(file.exists("Multibeam_metadata.gpkg")){
 
 for (i in 1:nrow(mb_df)) {
   if(!is.na(mb_df$Server_Location[i])){
-    if(str_detect(mb_df$Server_Location[i], "^D:")){
-      prefix<-""} else{
-        prefix<- "Z://" 
-      } #NFWF Server ran out of space so some temporarily on Scamp2 D Drive
-    if(!file.exists(paste0(prefix,mb_df$Server_Location[i]))){stop("Error: File does not exist")}
+    if(str_detect(mb_df$Server_Location[i], "^NFWF")){
+      prefix<-"Z://"
+      } else if(str_detect(mb_df$Server_Location[i], "^comit_wrk")){
+        prefix<- "Y://" 
+      } else{
+        warning(paste0(mb_df$Server_Location[i], "not on NFWF or comit_wrk server")) 
+        prefix<- ""
+      } #NFWF mapped to Z and comit_wrk mapped to Y
     
-    r<- rast(paste0(prefix,mb_df$Server_Location[i]))
+      f_name<- paste0(prefix, str_remove(str_remove(mb_df$Server_Location[i], "^NFWF/"), "^comit_wrk/"))
     
-    if(st_is_empty(mb_df[i,])){
-      shp<- (r < Inf) %>% 
-      as.polygons(dissolve=TRUE, values=FALSE, na.rm=TRUE) %>%
-      fillHoles() %>% 
-      st_as_sf() %>%
-      st_transform("EPSG:4326")
-      mb_df$geometry[i]<- st_geometry(shp)
-    } # Only generate footprints if it doesn't exist
+      if(!file.exists(f_name)){stop("Error: File does not exist")}
     
-    proj_string<- as.character(crs(r, proj=TRUE))
-    Projection<- suppressWarnings(str_extract(proj_string, regex("(?<=proj=)[[:alpha:]]+", perl=TRUE)))
-    Zone<-suppressWarnings(str_extract(proj_string, regex("(?<=zone=)[[:digit:]]+", perl=TRUE)))
-    Ellipsoid<-suppressWarnings(str_extract(proj_string, regex("(?<=datum=)[[:alnum:]]+", perl=TRUE)))
-    if(is.na(Ellipsoid)){
-      Ellipsoid<- suppressWarnings(str_extract(proj_string, regex("(?<=ellps=)[[:alnum:]]+", perl=TRUE)))
-    }
-    if(is.na(Ellipsoid)){
-      Ellipsoid<- paste(unlist(str_extract_all(proj_string, "\\+((rf)|(f)|(a)|(b))=[^ ]+")), collapse = " ")
-    }
-    if(!is.na(Zone)){
-      Projection<- paste(Projection, Zone)
-    }
-    Units<- suppressWarnings(str_extract(proj_string, regex("(?<=units=)[[:alpha:]]+", perl=TRUE)))
+      r<- rast(f_name)
     
-    mb_df$Filename[i]<- basename(mb_df$Server_Location[i])
-    mb_df$Resolution[i]<- xres(r)
-    mb_df$Units[i]<- Units
-    mb_df$Projection_Description[i]<- as.character(crs(r, describe=TRUE, parse=TRUE)[1])
-    mb_df$Projection[i]<- Projection
-    mb_df$Ellipsoid[i]<- Ellipsoid
-  }}
+      if(st_is_empty(mb_df[i,])){
+        shp<- (r < Inf) %>% 
+        as.polygons(dissolve=TRUE, values=FALSE, na.rm=TRUE) %>%
+        fillHoles() %>% 
+        st_as_sf() %>%
+        st_transform("EPSG:4326")
+        mb_df$geometry[i]<- st_geometry(shp)
+        } # Only generate footprints if it doesn't exist
+      
+      proj_string<- as.character(crs(r, proj=TRUE))
+      Projection<- suppressWarnings(str_extract(proj_string, regex("(?<=proj=)[[:alpha:]]+", perl=TRUE)))
+      Zone<-suppressWarnings(str_extract(proj_string, regex("(?<=zone=)[[:digit:]]+", perl=TRUE)))
+      Ellipsoid<-suppressWarnings(str_extract(proj_string, regex("(?<=datum=)[[:alnum:]]+", perl=TRUE)))
+      if(is.na(Ellipsoid)){
+        Ellipsoid<- suppressWarnings(str_extract(proj_string, regex("(?<=ellps=)[[:alnum:]]+", perl=TRUE)))
+      }
+      if(is.na(Ellipsoid)){
+        Ellipsoid<- paste(unlist(str_extract_all(proj_string, "\\+((rf)|(f)|(a)|(b))=[^ ]+")), collapse = " ")
+      }
+      if(!is.na(Zone)){
+        Projection<- paste(Projection, Zone)
+      }
+      Units<- suppressWarnings(str_extract(proj_string, regex("(?<=units=)[[:alpha:]]+", perl=TRUE)))
+    
+      mb_df$Filename[i]<- basename(mb_df$Server_Location[i])
+      mb_df$Resolution[i]<- xres(r)
+      mb_df$Units[i]<- Units
+      mb_df$Projection_Description[i]<- as.character(crs(r, describe=TRUE, parse=TRUE)[1])
+      mb_df$Projection[i]<- Projection
+      mb_df$Ellipsoid[i]<- Ellipsoid
+    }}
 
 mb_df<- mb_df %>% select(-Old_Server_Location) # drop column
 
