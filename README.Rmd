@@ -75,11 +75,11 @@ for (i in 1:nrow(mb_df)) {
         } # Only generate footprints if it doesn't exist
       
       proj_string<- as.character(crs(r, proj=TRUE))
-      Projection<- suppressWarnings(str_extract(proj_string, regex("(?<=proj=)[[:alpha:]]+", perl=TRUE)))
-      Zone<-suppressWarnings(str_extract(proj_string, regex("(?<=zone=)[[:digit:]]+", perl=TRUE)))
-      Ellipsoid<-suppressWarnings(str_extract(proj_string, regex("(?<=datum=)[[:alnum:]]+", perl=TRUE)))
+      Projection<- suppressWarnings(str_extract(proj_string, regex("(?<=proj=)[[:alpha:]]+")))
+      Zone<-suppressWarnings(str_extract(proj_string, regex("(?<=zone=)[[:digit:]]+")))
+      Ellipsoid<-suppressWarnings(str_extract(proj_string, regex("(?<=datum=)[[:alnum:]]+")))
       if(is.na(Ellipsoid)){
-        Ellipsoid<- suppressWarnings(str_extract(proj_string, regex("(?<=ellps=)[[:alnum:]]+", perl=TRUE)))
+        Ellipsoid<- suppressWarnings(str_extract(proj_string, regex("(?<=ellps=)[[:alnum:]]+")))
       }
       if(is.na(Ellipsoid)){
         Ellipsoid<- paste(unlist(str_extract_all(proj_string, "\\+((rf)|(f)|(a)|(b))=[^ ]+")), collapse = " ")
@@ -87,7 +87,7 @@ for (i in 1:nrow(mb_df)) {
       if(!is.na(Zone)){
         Projection<- paste(Projection, Zone)
       }
-      Units<- suppressWarnings(str_extract(proj_string, regex("(?<=units=)[[:alpha:]]+", perl=TRUE)))
+      Units<- suppressWarnings(str_extract(proj_string, regex("(?<=units=)[[:alpha:]]+")))
     
       mb_df$Filename[i]<- basename(mb_df$Server_Location[i])
       mb_df$Resolution[i]<- xres(r)
